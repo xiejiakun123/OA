@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cssl.dao.task.TaskDao">
+    <select id="cxsk" resultType="Aoa_task_user">
+    SELECT * FROM aoa_task_user  WHERE status_id=3 AND task_recive_user_id=#{uid}
+    </select>
+</mapper>

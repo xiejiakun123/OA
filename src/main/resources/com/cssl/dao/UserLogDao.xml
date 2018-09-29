@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cssl.dao.User.UserLogDao">
+    <select id="cxlg" resultType="Aoa_user_log">
+        SELECT * FROM aoa_user_log WHERE user_id=#{uid}
+    </select>
+</mapper>
